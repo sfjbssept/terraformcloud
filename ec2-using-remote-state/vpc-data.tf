@@ -5,6 +5,5 @@ data "terraform_remote_state" "vpc" {
     workspaces = {
       name = "terraform-vpc-demo"
     }
-
   }
 }

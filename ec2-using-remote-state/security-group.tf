@@ -1,7 +1,7 @@
 resource "aws_security_group" "terraform-cloud-nishant-group" {
   name        = "terraform-cloud-nishant-group"
   description = "terraform sg for ec2 instance"
-  vpc_id      = data.terraform_remote_state.vpc.output.vpc_id
+  vpc_id      = data.terraform_remote_state.vpc.outputs.vpc_id
   ingress {
     description = "allow ssh port 22"
     from_port   = 22
